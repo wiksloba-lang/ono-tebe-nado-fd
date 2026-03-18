@@ -1,1 +1,66 @@
-/* место для вашего кода */
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+    margin: 0;
+    padding: 0;
+}
+header
+  .header_logo {
+    width: 148px;
+    display: block;
+}
+main {
+    
+}
+.content-section {
+    box-sizing: border-box;
+    margin: auto;
+    color: #000;
+    }    
+.cover {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    background-size: cover;
+    background-image:url(/images/cover.jpg) ;
+    color: #fff;
+    font-family: raleway, sans-serif;
+    height: 757px;
+    padding: 50px, 165px, 207px;
+   }
+   .overlay {
+    background-color: #00000026;
+    }
+    .cover__title {
+        letter-spacing: 30%;
+        line-height: 115%;
+        font-weight: 550;
+        font-size: 100px;
+        gap: 100px;
+        width: 100%;
+          }
+           .accent-span {
+            display: block;
+        }
+                .text-center {
+                    text-align: center;
+                }
+                                .text-right {
+                                    text-align: right;
+                                }
+.description { 
+}
+.lots { 
+    padding: 180px 24px 120px;
+}
+.lots__title { 
+    margin-bottom: 27px;
+}
+.more { 
+    margin-top: 30px;
+}
+.logo-column  { 
+     width: 148px;
+    display: block;
+    }
+footer {
+        padding: 0px 50px 82px;
+}

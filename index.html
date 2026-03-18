@@ -23,12 +23,10 @@
             </li>
           </ul>
         </nav>
-        <a class="header_logo">
-          <img
-          class="header_logo_image"
-          src="/images/logo.svg"
-          alt="Логотип проекта"
-          />
+        <div class="header_logo">
+        <img src="/images/logo-black.svg" alt="logo_dark">
+      </div>
+      
       <adress>
         <ul class="header__contacts">
             <li class="header__phone">
@@ -44,38 +42,66 @@
       </adress>
     </header>
     <main class="content">
-      <section class="cover content-section  content-section_theme_dark">
-        <h1 class="cover__title">
-          <span class="accent-span">ОНО</span>
-          <span class="accent-span text-center">ТЕБЕ</span>
-          <span class="accent-span text-right">НАДО</span>
-        </h1>
+      <section class="cover content-section overlay">
+            <h1 class="cover__title">
+            <span class="accent-span">ОНО</span>
+            <span class="accent-span text-center">ТЕБЕ</span>
+            <span class="accent-span text-right">НАДО</span>
+          </h1>
         <div class="description">
-          <p class="description__subline">
+           <p class="description__subline">
             АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ
           </p>
           <button class="description__button">СДЕЛАТЬ СТАВКУ</button>
         </div>
-      </section>
-      <section class="lots">
+          </section>
+      <section class= "lots content-section">
         <h1 class="lots__title">ЛОТЫ</h1>
+        <ul>
         <li>
-          <a href="#0">
-            <article class="card1">
+              <article class="card1 overlay">
               <div class="card__content">
+                <a href="#0">
                 <h4 class="card__title">Фильм режиссёра, который бросил киношколу</h4>
+              </a>
                 <div class="card__text">
                   <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
                 </div>
               </div>
             </article>
-          </a>
         </li>
-       <!-- <li></li> <li></li> -->
+          <li> <a href="#0">
+            <article class="card2 overlay">
+              <div class="card__content">
+                <a href="#0">
+                <h4 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h4>
+              </a>
+                <div class="card__text">
+                  <p>Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+                </div>
+              </div>
+            </article>
+          </li>
+           <li>
+             <a href="#0">
+            <article class="card3 overlay">
+              <div class="card__content">
+                <a href="#0">
+                <h4 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h4>
+              </a>
+                <div class="card__text">
+                  <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
         <div class="more"><a href="#0">посмотреть больше</a></div>
       </section>
-      <section class="about">
-        <div class="container logo-column"></div>
+      <section class="content-section">
+        <div class="container logo-column">
+          <img src="/images/logo-white.svg" alt="logo_dark">
+        </div>
         <div class="container about-column">
           <div>
             <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
@@ -86,7 +112,7 @@
       </section>
     </main>
     <footer>
-      <adress>
+    <div class="adress">
         <ul class="header__contacts">
             <li class="header__phone">
               <a href="#0">+9 999 555 5555</a>
@@ -98,8 +124,8 @@
               <p>наб. Принсенграхт 263- 265, Амстердам</p>
             </li>
           </ul>
-      </adress>
-      <nav class="header__menu">
+      </div>
+      <div class="header__menu">
           <ul class="header__menu-list">
             <li class="header__menu-item header__menu-item_active">
               <a class="header__menu-link">главная</a>
@@ -111,7 +137,7 @@
               <a class="header__menu-link" href="#0">об аукционе</a>
             </li>
           </ul>
-        </nav>
+        </div>
       <div class="socials__menu">
         <ul class="socials">
           <li class="YouTube"></li>
