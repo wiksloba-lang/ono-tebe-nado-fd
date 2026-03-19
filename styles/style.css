@@ -8,11 +8,30 @@ header{
     align-items: center;
     padding: 82px 50px 96px;
 }
+.header__menu  {
+display: flex;
+flex-direction: row;
+gap: 20px;
+list-style: circle;
+}
+.header__links-list-item_no-bullit {
+list-style-type: none;
+color: #eb0808;
+}
   .header_logo {
     width: 130px;
     height: 105px;
     display: block;
 }
+address { font-style: normal; margin: 0; padding: 0; }
+.header__contacts {
+ display: flex;
+flex-direction: column;
+max-width: 240px;
+justify-self: end;
+align-items: flex-start;
+}
+
 main {
     
 }
@@ -64,9 +83,11 @@ ul {
 }
 .lots__title { 
     margin-bottom: 27px;
+    margin-left: 40px;
 }
 .more { 
     margin-top: 30px;
+    margin-left: 40px;
 }
 .logo-column  { 
      width: 148px;
