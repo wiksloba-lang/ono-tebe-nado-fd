@@ -2,6 +2,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     margin: 0;
     padding: 0;
 }
+ul {
+    list-style-type: none; /* Убирает маркеры */
+}
 header{
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -35,31 +38,32 @@ align-items: flex-start;
 main {
     
 }
-ul {
-    list-style-type: none; /* Убирает маркеры */
-    padding: 0;            /* Убирает отступы слева */
-    margin: 0;             /* Убирает внешние отступы */
-}
+
 
 .content-section {
     box-sizing: border-box;
     margin: auto;
     color: #000;
-    }    
+    }     
+    .overlay {
+    background-color: #7b636326;
+    }
 .cover {
+    position: relative;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-size: cover;
     background-image:url(/images/cover.jpg) ;
     color: #fff;
     font-family: raleway, sans-serif;
-    height: 757px;
+   min-height: 757px;
     padding: 50px, 165px, 50px;
+   
    }
-   .overlay {
-    background-color: #00000026;
-    }
-    .cover__title {
+
+    .aligned-text {
+        display: block;
+        text-transform: uppercase;
         letter-spacing: 30%;
         line-height: 115%;
         font-weight: 550;
@@ -67,28 +71,59 @@ ul {
         gap: 100px;
         width: 100%;
           }
-           .accent-span {
-            display: block;
+         .aligned-text_left {
+            text-align: left;
         }
-                .text-center {
+                .aligned-text_center {
                     text-align: center;
                 }
-                                .text-right {
+                                .aligned-text_right {
                                     text-align: right;
                                 }
-.description { 
+.cover__description { 
+}
+.letter-spacing-extended { 
+    word-spacing: 27px;
+}
+.bet-button { 
+   background-color:transparent;
 }
 .lots { 
-    padding: 180px 24px 120px;
+   padding: 180px 24px 120px;
 }
 .lots__title { 
     margin-bottom: 27px;
     margin-left: 40px;
 }
+.card__content{ 
+    width: 254px;
+   }
+.card { 
+   width: 100%;
+   background-size: cover;
+   background-position: center
+}
+.lots__card { 
+    display: flex;
+    
+   width: 100%;
+   background-size: cover;
+   background-position: center
+}
+.card__title { 
+   width: 100%;
+}
+.card__book { 
+   background-image: ;
+}
 .more { 
     margin-top: 30px;
     margin-left: 40px;
 }
+ul, ol {
+  list-style: none; /* Убирает маркеры */
+}
+
 .logo-column  { 
      width: 148px;
     display: block;
@@ -101,10 +136,17 @@ footer {
     align-items: center;
     padding: 0px 50px 82px;
 }
+ .futer__contacts {
+display: flex;
+flex-direction: column;
+max-width: 240px;
+justify-self: end;
+align-items: flex-start;}
+
 .social-icon {
 width: 48px;
 }
-.footer-social {
+.footer__social-list {
   display: flex;
   justify-content: space-between ; /* Центрирование */
   width: 240px;

@@ -1,0 +1,60 @@
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none; /* Убирает маркеры */
+}
+.content-section {
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+    padding: 92px 50px 96px;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    justify-items: center;
+    font-size: 18px;
+    }
+.header__links-list {
+    display: flex;
+    gap: 32px;
+    }
+.header__links-list-item {
+   list-style: circle;
+}
+.header__link { /* Не работает */
+    list-style-type: none;
+ }
+ header__links-list-item_no-bullit { /* Не работает */
+    list-style-type: none;
+ }
+.header__logo-image {
+    width: 130px;
+    }
+
+.adress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 240px;
+    justify-self: end;
+}
+main {}
+.cover {
+   display: block;
+    padding: 0;
+    background-image: url("/images/cover.jpg");
+    background-position: center;
+    height: 757px;
+}
+.lots {
+    padding: 180px 24px 120px;
+}
+.about {
+    padding : 0px 24px 180px;
+}
+footer {
+    padding : 0px 50px;
+}
