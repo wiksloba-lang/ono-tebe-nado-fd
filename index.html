@@ -41,20 +41,21 @@
     </header>
     <main class="content"><!-- для main класс не понадобился -->
       
-      <section class="cover content-section">
+      <section class="cover "><!-- content-section -->
         <div class="overlay"></div><!-- не могу определить позицию и родителя -->
-        <div class="bacgraund__cover">
-        <div class="cover__text">
-        <h1 class="cover__title aligned-text letter-spacing-extended"><!-- весь текст баннера остается под оверлеем несмотря на индекс, не знаю куда no-letter-spacing -->
+         <div class="cover__text">
+        <h1 class="cover__title letter-spacing-extended"><!-- aligned-text --><!-- весь текст баннера остается под оверлеем несмотря на индекс, не знаю куда no-letter-spacing -->
           <span class="aligned-text_left">оно</span>
           <span class="aligned-text_center">тебе</span>
           <span class="aligned-text_right">надо</span>
         </h1>  
         <div class="cover__description">
-          <h2 class="cover__description-text aligned-text">
+          <h2 class="cover__description-text letter-spacing-first">
             <!-- no-letter-spacing класс для обнуления общего межбуквенного расстояния у последней буквы -->
-            аукцион вещей в которые никто не верил
+           <span>аукцион вещей, в которые никто не верит</span>
+           
           </h2>
+          
           <button class="bet-button text-button">сделать ставку</button>
            </div>
           </div>
