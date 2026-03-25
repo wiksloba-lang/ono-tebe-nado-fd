@@ -29,10 +29,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
   display: block;
   justify-self: center;
   align-self: center;
-  width: 130px;
+  width: 135px;
+  height: 105px;
 }
 .header__logo-image {
- /*  width: 100%; */
+ 
 }
 
 .adress {
@@ -70,7 +71,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     background-image: url("/images/cover.jpg");
     background-position: center;
     background-size: cover;
-    min-height: 757px;
+    min-height: 766px;
     padding: 165px 50px 50px;
     z-index: 0;
 }
@@ -184,6 +185,7 @@ background-position: center;
 width: 334px;
 min-height: 596px;   
 padding: 48px 40px;
+margin-top: -7px;
     }
  .card__film {
     z-index: -1;
@@ -199,48 +201,62 @@ padding: 48px 40px;
     }
 .lots__look-more-link  {
     font-size: 20px;
-    line-height: 23px ;
-    margin-top: 28px;
+    line-height: 28px ;
+    margin-top: 31px;
     margin-left: 40px;
     }
 .about {
-    box-sizing: border-box;
-    padding : 120px 24px 180px;
+    /*box-sizing: border-box; */
     display: grid;
-    grid-template-columns: 334px auto;
-    gap: 72px;
-    }
+   grid-template-columns: 334px auto;
+   grid-template-rows: 240px auto;
+    padding-top: 150px;
+    gap: 8px 50px;
+    
+     /* Отступы между ячейками */
+      }
 .about__column-logo {
     
 }
 .about__logo {
+    grid-row: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 240px;
     height: 240px;
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
     border-radius: 90%;
+    margin-left: 70px;
+    
 }
 .about__logo-image {
-    width: 148px;
-    height: 114px;
+  width: 148px;
+  height: 114px;
     }
 .about__column-text{
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    
+    justify-content: left;
+    width: 670px;
+      gap: 24px;
 }
 .about__title {
- font-size: 40px;
+   align-self: center;
+   font-size: 40px;
    font-weight: 700;
-   margin-bottom: 100px;
+   margin-top: 5px;
    line-height: 47px;
-   text-transform: uppercase;}
+   text-transform: uppercase;
+}
 .about__text {
+    
     font-size: 20px;
     line-height: 24px;
+  
 }
 .footer {
-    padding : 0px 50px;
+    padding :180px 50px 82px 50px;
     display: grid;
     grid-template-columns: 1fr 164px 1fr;
     font-size: 18px;
@@ -249,6 +265,9 @@ padding: 48px 40px;
   display: flex; 
   flex-direction: column;
   width: 265px;
+  font-size: 18px;
+  line-height: 25px;
+  gap: 1px;
 }
 .footer__menu{
 
