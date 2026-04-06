@@ -1,1 +1,1 @@
-https://github.com/wiksloba-lang/ono-tebe-nado
+https://github.com/wiksloba-lang/ono-tebe-nado-fd
