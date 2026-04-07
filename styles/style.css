@@ -39,7 +39,8 @@
 }
 .address-block__header {
     justify-self: end;
-    max-width: 240px;}
+    max-width: 240px;
+}
 .cover {
     position: relative;
     background-repeat: no-repeat;
