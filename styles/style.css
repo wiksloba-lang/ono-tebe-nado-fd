@@ -22,6 +22,9 @@
 .header__links-list-item_no-bullit {
     list-style-type: none;
  }
+ .link-active {
+    text-decoration: none;
+ }
  .header__logo {
     /* 
     display: block;
@@ -30,17 +33,21 @@
     width: 136px;
     height: auto;
 }
- .address-block {
+ .address {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-style: inherit;
     line-height: 1.35;
 }
-.address-block__header {
+.header__address {
     justify-self: end;
     max-width: 240px;
 }
+/* .address-block__item {
+}
+.address-block__link {
+} */
 .cover {
     position: relative;
     background-repeat: no-repeat;
@@ -80,15 +87,18 @@
 .aligned-text_center {
     display: block;
     text-align: center;
-    margin-right: -29px;
+    margin-left: 29px;
     /* margin-top: 23px; width: 100%; */
     margin-bottom: 20px;
 }
 .aligned-text_right {
     display: block;
     text-align: right;
-    margin-right: -30px;
-    /*margin-top: 20px; */
+    /*margin-left: 30px;
+    margin-top: 20px; */
+ }
+ .no-letter-spacing {
+    letter-spacing: 0;
  }
 .cover__description {
     display: flex;
@@ -104,11 +114,12 @@
     word-spacing: 18px;
 }   
 .bet-button {
+    font-family:inherit; /* наследование шрифта */
     background-color: transparent;
     border-color: rgb(255, 255, 255);
-    padding: 10px 30px;
+    padding: 10px 32px;
 }
-    .text-button {
+.text-button {
     font-size: 22px;
     line-height: 28px;
     font-weight: lighter;
@@ -117,9 +128,6 @@
 }
 .lots {
     padding: 180px 23px 0px;
-}
-ul {
-    list-style-type: none;
 }
 .lots__heading { /* заголовок секции; */
    font-size: 40px;
@@ -132,6 +140,7 @@ ul {
 }
 .lots__card-list { /* список карточек */
     display: flex;
+    flex-wrap: wrap;/* чтобы при добавлении карточки они переносились на новую строку */
     gap: 25px;
     margin-bottom: 30px;
 }
@@ -215,7 +224,7 @@ ul {
     margin-top: 100px;
 }
 .about__title {
-   align-self: left;
+   align-self: flex-start; /*justify-content: left; */
    font-size: 40px;
    font-weight: 700;
    line-height: 47px;
@@ -237,7 +246,7 @@ ul {
     font-size: 18px;
     /*align-items:center;*/
 }
-.address-block__footer {
+.footer__address {
     justify-self: start;
     max-width: 265px;
 }
